@@ -9,5 +9,6 @@
 #include <chrono>
 #include <ctime>
 #include <iterator>
+#include <string>
 
 #endif // LIBRARIES_H_INCLUDED

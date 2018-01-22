@@ -12,13 +12,13 @@ std::ostream& operator<<(std::ostream& os, card::pip_type pip)
 }
 
 // outputs suit name through stream
-std::ostream& operator<<(std::ostream& os, card::suit_type pip)
+std::ostream& operator<<(std::ostream& os, card::suit_type suit)
 {
-    return os << suit_names[pip];
+    return os << suit_names[suit];
 }
 
 // Outputs the card name
 std::ostream& operator<<(std::ostream& os, card c)
 {
-    return os << c.pip() << " of " << c.suit();
+    return os << c.pip() << " of " <<c.suit();
 }

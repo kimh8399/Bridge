@@ -1,34 +1,26 @@
 #include "bridge_info.h"
 
-bool sort_func(card i, card j)
+bool sort_suit(card i, card j)
 {
-    return (i.suit()<j.suit());
+    return ((int)i.suit() < (int)j.suit());
+}
+
+bool sort_pip(card i, card j)
+{
+    return ((int)i.pip() < (int)j.pip());
 }
 
 void player::deal(deque<card> cards)
 {
-    auto card_begin = cards.begin();
-    auto card_end = cards.end();
+    deque<card>::iterator card_begin = cards.begin();
 
-    switch(curr_dir)
-    {
-        case NORTH:
-            advance(card_end, 13);
-            break;
-        case SOUTH:
-            advance(card_begin, 13);
-            advance(card_end, 26);
-            break;
-        case EAST:
-            advance(card_begin, 26);
-            advance(card_end, 39);
-            break;
-        case WEST:
-            advance(card_begin, 39);
-            break;
-    }
-    hand.assign(card_begin, card_end);
-    //sort(hand.begin(), hand.end(),sort_func);
+    hand.assign(card_begin + ((int)curr_dir-1)*13, card_begin + (int)curr_dir*13);
+
+    sort(hand.begin(), hand.end(), sort_pip);
+    sort(hand.begin(), hand.end(), sort_suit);
+
+    for(int i = 0; i < 13; i++)
+        cout<<hand[i]<<endl;
 }
 
 void start_bridge()
@@ -48,18 +40,21 @@ void start_bridge()
     South.deal(mainDeck.cards);
     West.deal(mainDeck.cards);
 
-    cout<<"North Hand"<<endl;
-    for(int i = 0; i < 13; i++)
-        cout<<North.hand[i]<<endl;
-    cout<<endl;
-    cout<<"East Hand"<<endl;
-    for(int i = 0; i < 13; i++)
-        cout<<East.hand[i]<<endl;
-    cout<<endl;
     cout<<"South Hand"<<endl;
     for(int i = 0; i < 13; i++)
         cout<<South.hand[i]<<endl;
     cout<<endl;
+
+    cout<<"North Hand"<<endl;
+    for(int i = 0; i < 13; i++)
+        cout<<North.hand[i]<<endl;
+    cout<<endl;
+
+    cout<<"East Hand"<<endl;
+    for(int i = 0; i < 13; i++)
+        cout<<East.hand[i]<<endl;
+    cout<<endl;
+
     cout<<"West Hand"<<endl;
     for(int i = 0; i < 13; i++)
         cout<<West.hand[i]<<endl;

@@ -3,7 +3,6 @@
 //
 // Basic Bridge Program
 
-#include "libraries.h"
 #include "bridge_info.h"
 
 using namespace std;
@@ -12,7 +11,6 @@ int main()
 {
     srand(time(NULL));
     start_bridge();
-
     return 0;
 
 }
