@@ -10,22 +10,18 @@ enum direction {NORTH = 1, EAST, SOUTH, WEST};
 class player
 {
 public:
+    player(direction d) {curr_dir = d;}
+
     // current direction
     direction curr_dir;
 
     // deals the deck into it's hand
-    void deal(deque<card> cards)
-    {
-        for(int i = 0; i < card::deck_size/4; i+= (int)curr_dir)
-            hand.push_back(cards[i]);
-    }
+    void deal(deque<card> cards);
 
-    // players hand
     deque <card> hand;
-
 };
 
 // starts the bridge game
-int start_bridge();
+void start_bridge();
 
 #endif // BRIDGE_INFO_H_INCLUDED

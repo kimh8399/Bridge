@@ -11,13 +11,7 @@ using namespace std;
 int main()
 {
     srand(time(NULL));
-
-    deck mainDeck;
-
-    //mainDeck.shuffle();
-
-    for(int i = 0; i < card::deck_size; i++)
-        cout<<mainDeck.cards[i]<<endl;
+    start_bridge();
 
     return 0;
 
