@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1516593750 source:c:\users\matilda\documents\github\bridge\bridge\cards.cpp
+	"cards.h"
+
+1516593786 source:c:\users\matilda\documents\github\bridge\bridge\main.cpp
+	"libraries.h"
+	"bridge_info.h"
+
+1516586683 c:\users\matilda\documents\github\bridge\bridge\libraries.h
+	<iostream>
+	<deque>
+	<algorithm>
+	<ostream>
+	<iterator>
+	<chrono>
+	<ctime>
+
+1516593750 c:\users\matilda\documents\github\bridge\bridge\cards.h
+	"libraries.h"
+
+1516593769 source:c:\users\matilda\documents\github\bridge\bridge\basic_play.cpp
+	"basic_play.h"
+
+1516593769 c:\users\matilda\documents\github\bridge\bridge\basic_play.h
+	"bridge_info.h"
+
+1516593905 c:\users\matilda\documents\github\bridge\bridge\bridge_info.h
+	"cards.h"
+

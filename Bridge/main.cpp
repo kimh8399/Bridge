@@ -3,12 +3,22 @@
 //
 // Basic Bridge Program
 
-#include <iostream>
+#include "libraries.h"
+#include "bridge_info.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    srand(time(NULL));
+
+    deck mainDeck;
+
+    //mainDeck.shuffle();
+
+    for(int i = 0; i < card::deck_size; i++)
+        cout<<mainDeck.cards[i]<<endl;
+
     return 0;
+
 }

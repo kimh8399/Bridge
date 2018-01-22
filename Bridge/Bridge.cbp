@@ -32,6 +32,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="basic_play.cpp" />
+		<Unit filename="basic_play.h" />
+		<Unit filename="bridge_info.cpp" />
+		<Unit filename="bridge_info.h" />
+		<Unit filename="cards.cpp" />
+		<Unit filename="cards.h" />
+		<Unit filename="libraries.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
