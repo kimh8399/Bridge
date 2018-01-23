@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1516665844 source:c:\users\matilda\documents\github\bridge\bridge\cards.cpp
+	"cards.h"
+
+1516664741 source:c:\users\matilda\documents\github\bridge\bridge\main.cpp
+	"bridge_info.h"
+
+1516663658 c:\users\matilda\documents\github\bridge\bridge\libraries.h
+	<iostream>
+	<deque>
+	<algorithm>
+	<ostream>
+	<iterator>
+	<chrono>
+	<ctime>
+	<iterator>
+	<string>
+
+1516665287 c:\users\matilda\documents\github\bridge\bridge\cards.h
+	"libraries.h"
+
+1516593769 source:c:\users\matilda\documents\github\bridge\bridge\basic_play.cpp
+	"basic_play.h"
+
+1516593769 c:\users\matilda\documents\github\bridge\bridge\basic_play.h
+	"bridge_info.h"
+
+1516655809 c:\users\matilda\documents\github\bridge\bridge\bridge_info.h
+	"cards.h"
+
+1516626839 source:c:\users\huckkim\documents\github\bridge\bridge\basic_play.cpp
+	"basic_play.h"
+
+1516626839 c:\users\huckkim\documents\github\bridge\bridge\basic_play.h
+	"bridge_info.h"
+
+1516632089 c:\users\huckkim\documents\github\bridge\bridge\bridge_info.h
+	"cards.h"
+
+1516626839 c:\users\huckkim\documents\github\bridge\bridge\cards.h
+	"libraries.h"
+
+1516631526 c:\users\huckkim\documents\github\bridge\bridge\libraries.h
+	<iostream>
+	<deque>
+	<algorithm>
+	<ostream>
+	<iterator>
+	<chrono>
+	<ctime>
+	<iterator>
+
+1516626839 source:c:\users\huckkim\documents\github\bridge\bridge\cards.cpp
+	"cards.h"
+
+1516627557 source:c:\users\huckkim\documents\github\bridge\bridge\main.cpp
+	"libraries.h"
+	"bridge_info.h"
+
+1516644152 source:c:\users\huckkim\documents\github\bridge\bridge\bridge_info.cpp
+	"bridge_info.h"
+
+1516665763 source:c:\users\matilda\documents\github\bridge\bridge\bridge_info.cpp
+	"bridge_info.h"
+
