@@ -28,19 +28,19 @@
 1516655809 c:\users\matilda\documents\github\bridge\bridge\bridge_info.h
 	"cards.h"
 
-1516626839 source:c:\users\huckkim\documents\github\bridge\bridge\basic_play.cpp
+1516675825 source:c:\users\huckkim\documents\github\bridge\bridge\basic_play.cpp
 	"basic_play.h"
 
-1516626839 c:\users\huckkim\documents\github\bridge\bridge\basic_play.h
+1516675825 c:\users\huckkim\documents\github\bridge\bridge\basic_play.h
 	"bridge_info.h"
 
-1516632089 c:\users\huckkim\documents\github\bridge\bridge\bridge_info.h
+1516675825 c:\users\huckkim\documents\github\bridge\bridge\bridge_info.h
 	"cards.h"
 
-1516626839 c:\users\huckkim\documents\github\bridge\bridge\cards.h
+1516675825 c:\users\huckkim\documents\github\bridge\bridge\cards.h
 	"libraries.h"
 
-1516631526 c:\users\huckkim\documents\github\bridge\bridge\libraries.h
+1516675825 c:\users\huckkim\documents\github\bridge\bridge\libraries.h
 	<iostream>
 	<deque>
 	<algorithm>
@@ -49,15 +49,15 @@
 	<chrono>
 	<ctime>
 	<iterator>
+	<string>
 
 1516626839 source:c:\users\huckkim\documents\github\bridge\bridge\cards.cpp
 	"cards.h"
 
-1516627557 source:c:\users\huckkim\documents\github\bridge\bridge\main.cpp
-	"libraries.h"
+1516675825 source:c:\users\huckkim\documents\github\bridge\bridge\main.cpp
 	"bridge_info.h"
 
-1516644152 source:c:\users\huckkim\documents\github\bridge\bridge\bridge_info.cpp
+1516675825 source:c:\users\huckkim\documents\github\bridge\bridge\bridge_info.cpp
 	"bridge_info.h"
 
 1516665763 source:c:\users\matilda\documents\github\bridge\bridge\bridge_info.cpp

@@ -31,7 +31,7 @@ std::ostream& operator<<(std::ostream& os, deque <card> d)
     {
         if(first)
         {
-            cout<<(char)6<<": ";
+            cout<<(char)6<<"S: ";
             first = false;
         }
         cout<<d[i].pip()<<" ";
@@ -43,7 +43,7 @@ std::ostream& operator<<(std::ostream& os, deque <card> d)
         if(first)
         {
             cout<<endl;
-            cout<<(char)3<<": ";
+            cout<<(char)3<<"H: ";
             first = false;
         }
         cout<<d[i].pip()<<" ";
@@ -56,7 +56,7 @@ std::ostream& operator<<(std::ostream& os, deque <card> d)
         if(first)
         {
             cout<<endl;
-            cout<<(char)4<<": ";
+            cout<<(char)4<<"D: ";
             first = false;
         }
         cout<<d[i].pip()<<" ";
@@ -70,7 +70,7 @@ std::ostream& operator<<(std::ostream& os, deque <card> d)
         if(first)
         {
             cout<<endl;
-            cout<<(char)5<<": ";
+            cout<<(char)5<<"C: ";
             first = false;
         }
         cout<<d[i].pip()<<" ";
