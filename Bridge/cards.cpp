@@ -27,7 +27,7 @@ std::ostream& operator<<(std::ostream& os, deque <card> d)
 {
     int i = 12;
     bool first = true;
-    while(d[i].suit() == card::spades)
+    while(d[i].suit() == card::spades && i >= 0)
     {
         if(first)
         {
@@ -36,9 +36,11 @@ std::ostream& operator<<(std::ostream& os, deque <card> d)
         }
         cout<<d[i].pip()<<" ";
         i--;
+        if(i < 0)
+            break;
     }
     first = true;
-    while(d[i].suit() == card::hearts)
+    while(d[i].suit() == card::hearts && i >= 0)
     {
         if(first)
         {
@@ -48,10 +50,12 @@ std::ostream& operator<<(std::ostream& os, deque <card> d)
         }
         cout<<d[i].pip()<<" ";
         i--;
+        if(i < 0)
+            break;
     }
 
     first = true;
-    while(d[i].suit() == card::diamonds)
+    while(d[i].suit() == card::diamonds && i >= 0)
     {
         if(first)
         {
@@ -61,12 +65,12 @@ std::ostream& operator<<(std::ostream& os, deque <card> d)
         }
         cout<<d[i].pip()<<" ";
         i--;
+        if(i < 0)
+            break;
     }
     first = true;
-    while(d[i].suit() == card::clubs)
+    while(d[i].suit() == card::clubs && i >= 0)
     {
-        if(i == 0)
-            break;
         if(first)
         {
             cout<<endl;
@@ -75,6 +79,8 @@ std::ostream& operator<<(std::ostream& os, deque <card> d)
         }
         cout<<d[i].pip()<<" ";
         i--;
+        if(i < 0)
+            break;
     }
     cout<<endl;
     return os;

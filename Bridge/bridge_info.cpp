@@ -36,14 +36,23 @@ void start_bridge()
     players[SOUTH].deal(mainDeck.cards);
     players[WEST].deal(mainDeck.cards);
 
+    cout<<"North Hand"<<endl;
+    cout<<players[NORTH].hand<<endl;
+
     cout<<"South Hand"<<endl;
     cout<<players[SOUTH].hand<<endl;
 
-    card::suit_type trump_suit = card::spades;
+    cout<<"West Hand"<<endl;
+    cout<<players[WEST].hand<<endl;
+
+    cout<<"East Hand"<<endl;
+    cout<<players[EAST].hand<<endl;
+
+    //card::suit_type trump_suit = card::spades;
 
     // Insert bidding program
 
     // Basic Play Program
-    start_play(trump_suit, 1, SOUTH, players);
+    //start_play(trump_suit, 1, SOUTH, players);
 
 }

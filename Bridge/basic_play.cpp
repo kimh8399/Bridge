@@ -5,7 +5,6 @@ card::suit_type play_card(player)
     int card;
     cout<<"Pick a card"<<endl;
 
-
     card::suit_type;
     return
 }
