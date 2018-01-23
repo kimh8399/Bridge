@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1516663864 source:c:\users\matilda\documents\github\bridge\bridge\cards.cpp
+1516665844 source:c:\users\matilda\documents\github\bridge\bridge\cards.cpp
 	"cards.h"
 
-1516663329 source:c:\users\matilda\documents\github\bridge\bridge\main.cpp
+1516664741 source:c:\users\matilda\documents\github\bridge\bridge\main.cpp
 	"bridge_info.h"
 
 1516663658 c:\users\matilda\documents\github\bridge\bridge\libraries.h
@@ -16,7 +16,7 @@
 	<iterator>
 	<string>
 
-1516664088 c:\users\matilda\documents\github\bridge\bridge\cards.h
+1516665287 c:\users\matilda\documents\github\bridge\bridge\cards.h
 	"libraries.h"
 
 1516593769 source:c:\users\matilda\documents\github\bridge\bridge\basic_play.cpp
@@ -60,6 +60,6 @@
 1516644152 source:c:\users\huckkim\documents\github\bridge\bridge\bridge_info.cpp
 	"bridge_info.h"
 
-1516664072 source:c:\users\matilda\documents\github\bridge\bridge\bridge_info.cpp
+1516665763 source:c:\users\matilda\documents\github\bridge\bridge\bridge_info.cpp
 	"bridge_info.h"
 

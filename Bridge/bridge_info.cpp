@@ -18,9 +18,6 @@ void player::deal(deque<card> cards)
 
     sort(hand.begin(), hand.end(), sort_pip);
     sort(hand.begin(), hand.end(), sort_suit);
-
-    for(int i = 0; i < 13; i++)
-        cout<<hand[i]<<endl;
 }
 
 void start_bridge()
@@ -41,22 +38,14 @@ void start_bridge()
     West.deal(mainDeck.cards);
 
     cout<<"South Hand"<<endl;
-    for(int i = 0; i < 13; i++)
-        cout<<South.hand[i]<<endl;
-    cout<<endl;
+    cout<<South.hand<<endl;
 
     cout<<"North Hand"<<endl;
-    for(int i = 0; i < 13; i++)
-        cout<<North.hand[i]<<endl;
-    cout<<endl;
+    cout<<North.hand<<endl;
 
     cout<<"East Hand"<<endl;
-    for(int i = 0; i < 13; i++)
-        cout<<East.hand[i]<<endl;
-    cout<<endl;
+    cout<<East.hand<<endl;
 
     cout<<"West Hand"<<endl;
-    for(int i = 0; i < 13; i++)
-        cout<<West.hand[i]<<endl;
-    cout<<endl;
+    cout<<West.hand<<endl;
 }

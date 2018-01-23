@@ -33,7 +33,7 @@ public:
 
 // list of names for values
 const char* const pip_names[] =
-{ "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king", "ace"};
+{ "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
 
 // ouptuts value name through stream
 std::ostream& operator<<(std::ostream& os, card::pip_type pip);
@@ -47,6 +47,9 @@ std::ostream& operator<<(std::ostream& os, card::suit_type pip);
 
 // Outputs the card name
 std::ostream& operator<<(std::ostream& os, card c);
+
+// Outputs hand in bridge format
+std::ostream& operator<<(std::ostream& os, deque <card> d);
 
 class deck
 {
