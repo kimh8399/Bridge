@@ -4,14 +4,16 @@
 
 // location of each player
 
-enum direction {NORTH = 1, EAST, SOUTH, WEST};
+#define THE_BOOK 6
+
+enum direction {NORTH, EAST, SOUTH, WEST, num_players};
 
 // player class
 class player
 {
 public:
-    player(direction d) {curr_dir = d;}
-
+    player(direction d) :curr_dir(d) {}
+    player () {}
     // current direction
     direction curr_dir;
 
@@ -20,6 +22,10 @@ public:
 
     deque <card> hand;
 };
+
+// Sorting functions
+bool sort_suit(card i, card j);
+bool sort_pip(card i, card j);
 
 // starts the bridge game
 void start_bridge();
